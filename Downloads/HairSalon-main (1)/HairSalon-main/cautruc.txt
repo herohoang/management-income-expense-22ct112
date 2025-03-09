@@ -1,0 +1,16 @@
+backend-haircut/
+├── src/
+│   ├── config/        # Cấu hình (database, môi trường)
+│   ├── controllers/   # Xử lý logic API
+│   ├── models/        # Các model cho PostgreSQL
+│   ├── routes/        # Định nghĩa API routes
+│   ├── middlewares/   # Middleware (xác thực, logging)
+│   ├── services/      # Các service hỗ trợ (email, thanh toán)
+│   ├── app.js         # Cấu hình ứng dụng chính
+│   ├── db.js          # Kết nối PostgreSQL
+│   └── server.js      # Khởi động server
+├── .env               # File biến môi trường
+├── .gitignore         # Bỏ qua file không cần push lên Git
+├── package.json       # Cấu hình npm
+├── package-lock.json  # Lock dependencies
+└── README.md          # Hướng dẫn project
