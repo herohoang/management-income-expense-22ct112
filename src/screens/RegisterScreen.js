@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, Alert } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import uuid from 'react-native-uuid';
+import { v4 as uuidv4 } from 'react-native-uuid';
+
 
 const RegisterScreen = ({ navigation }) => {
   const [email, setEmail] = useState('');
@@ -14,7 +15,7 @@ const RegisterScreen = ({ navigation }) => {
     }
 
     // Tạo token tự động
-    const newToken = uuid.v4();
+    const newToken = uuidv4();
 
     // Lưu thông tin tài khoản và token
     const userData = { email, password, token: newToken };

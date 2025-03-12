@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { View, ActivityIndicator } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const AuthContext = ({ navigation }) => {
+const AuthLoadingScreen = ({ navigation }) => {
   useEffect(() => {
     const checkToken = async () => {
       try {
@@ -28,4 +28,4 @@ const AuthContext = ({ navigation }) => {
   );
 };
 
-export default AuthContext;
+export default AuthLoadingScreen;
